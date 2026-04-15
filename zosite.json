@@ -1,0 +1,15 @@
+{
+  "name": "melodio",
+  "local_port": 57815,
+  "entrypoint": "bun run dev",
+  "publish": {
+    "label": "melodio",
+    "type": "http",
+    "entrypoint": "bun run prod",
+    "published_port": 57676,
+    "env": {
+      "NODE_ENV": "production",
+      "ZO_CLIENT_IDENTITY_TOKEN": "none"
+    }
+  }
+}
